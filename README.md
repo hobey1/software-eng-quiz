@@ -39,8 +39,8 @@ public class CheckBox extends Application {
     response = new Label("");
 
     //Create the radio buttons
-    rbKeyboard = new RadioButton("q1");
-    rbMouse = new RadioButton("q2")
+    rbq1 = new RadioButton("q1");
+    rbq2 = new RadioButton("q2")
 
     tg = new ToggleGroup;
 
