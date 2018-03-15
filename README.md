@@ -7,7 +7,7 @@ import javafx.scene.control.*;
 import javafx.event.*;
 import javafx.geometry.*;
 
-public class CheckBox extends Application {
+public class Radiobutton extends Application {
 
   Label response;
   Label prompt;
@@ -40,9 +40,11 @@ public class CheckBox extends Application {
 
     //Create the radio buttons
     rbq1 = new RadioButton("q1");
-    rbq2 = new RadioButton("q2")
+    rbq2 = new RadioButton("q2");
 
-    tg = new ToggleGroup;
+    // Need to create four radio buttons. 
+
+    tg = new ToggleGroup();
 
     //Add each button to toggle group
     rbq1.setToggleGroup(tg);
@@ -51,13 +53,13 @@ public class CheckBox extends Application {
     //Handle action events for the radio buttons
     rbq1.setOnAction(new EventHandler<ActionEvent>() {
       public void handle(ActionEvent ae) {
-        response.setText("Answer selected is q1")
+        response.setText("Answer selected is q1");
       }
     });
 
     rbq2.setOnAction(new EventHandler<ActionEvent>() {
       public void handle(ActionEvent ae) {
-        response.setText("Answer selected is q2")
+        response.setText("Answer selected is q2");
       }
     });
 
@@ -70,4 +72,5 @@ public class CheckBox extends Application {
   }
 
 }
-// this is not yet complete. I have created a couple of radio buttons here. The layout needs to be tweaked. 
+// Not yet finished. There isw an error in the compilation stage. Seems to be with the Radiobutton class. Further 
+// radio buttons need to be added. Anu changes are welcome. 
